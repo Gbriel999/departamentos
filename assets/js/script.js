@@ -42,6 +42,9 @@ function createCard(propiedades) {
             />
             <div class="card-body">
                 <h5 class="card-title">${propiedades.nombre}</h5>
+                <p>
+                <i class="fas fa-map-marker-alt"></i>  ${propiedades.lugar}
+                </p>
                 <p class="card-text">${propiedades.descripcion}</p>
                 <p>
                     <i class="fas fa-bed"></i> ${propiedades.habitaciones} Habitaciones |
