@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const contenedorArriendo = document.getElementById("propiedadesEnArriendo");
 
   if (contenedorVenta) {
-    pintar(propiedadesEnVenta, contenedorVenta);
+    mostrar(propiedadesEnVenta, contenedorVenta);
   }
 
   if (contenedorArriendo) {
-    pintar(propiedadesEnArriendo, contenedorArriendo);
+    mostrar(propiedadesEnArriendo, contenedorArriendo);
   }
 });
 
@@ -62,7 +62,7 @@ function createCard(propiedades) {
     </div>`;
 }
 
-function pintar(arreglo, contenedor) {
+function mostrar(arreglo, contenedor) {
   let html = "";
   arreglo.forEach((element) => {
     html += createCard(element);
